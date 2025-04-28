@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\bogda\\.nuget\\packages\\": {}
+    "/home/kirill050905/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bogda\\Desktop\\Study\\Лабораторные по ЧМ и АиСД\\АиСД\\Project_Algos\\ConsoleApp2\\ConsoleApp2.csproj",
+      "projectUniqueName": "/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/ConsoleApp2.csproj",
       "projectName": "ConsoleApp2",
-      "projectPath": "C:\\Users\\bogda\\Desktop\\Study\\Лабораторные по ЧМ и АиСД\\АиСД\\Project_Algos\\ConsoleApp2\\ConsoleApp2.csproj",
-      "packagesPath": "C:\\Users\\bogda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bogda\\Desktop\\Study\\Лабораторные по ЧМ и АиСД\\АиСД\\Project_Algos\\ConsoleApp2\\obj\\",
+      "projectPath": "/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/ConsoleApp2.csproj",
+      "packagesPath": "/home/kirill050905/.nuget/packages/",
+      "outputPath": "/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bogda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/kirill050905/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -64,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

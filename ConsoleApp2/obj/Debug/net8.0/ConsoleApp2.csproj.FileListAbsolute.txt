@@ -1,70 +1,85 @@
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.exe
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.deps.json
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.runtimeconfig.json
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.dll
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.dll
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\refint\ConsoleApp2.dll
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.genruntimeconfig.cache
-C:\Users\PC\RiderProjects\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ref\ConsoleApp2.dll
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.exe
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.deps.json
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.runtimeconfig.json
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.dll
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.pdb
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.dll
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\refint\ConsoleApp2.dll
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.pdb
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.genruntimeconfig.cache
-E:\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ref\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.exe
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.deps.json
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.runtimeconfig.json
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\refint\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.genruntimeconfig.cache
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\ConsoleApp2\ConsoleApp2\obj\Debug\net8.0\ref\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\refint\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.exe
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.deps.json
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.runtimeconfig.json
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.genruntimeconfig.cache
-C:\Users\bogda\Desktop\Study\Лабораторные\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ref\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.exe
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.deps.json
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.runtimeconfig.json
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\refint\ConsoleApp2.dll
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.pdb
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.genruntimeconfig.cache
-C:\Users\bogda\Desktop\Study\Лабораторные по ЧМ и АиСД\АиСД\Project_Algos\ConsoleApp2\obj\Debug\net8.0\ref\ConsoleApp2.dll
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfoInputs.cache
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfo.cs
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.csproj.CoreCompileInputs.cache
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.exe
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.deps.json
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.runtimeconfig.json
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.dll
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.dll
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/refint/ConsoleApp2.dll
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.genruntimeconfig.cache
+C:/Users/PC/RiderProjects/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ref/ConsoleApp2.dll
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.exe
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.deps.json
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.runtimeconfig.json
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.dll
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.pdb
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfoInputs.cache
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfo.cs
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.csproj.CoreCompileInputs.cache
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.dll
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/refint/ConsoleApp2.dll
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.pdb
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.genruntimeconfig.cache
+E:/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ref/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.exe
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.deps.json
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.runtimeconfig.json
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfoInputs.cache
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfo.cs
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.csproj.CoreCompileInputs.cache
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/refint/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.genruntimeconfig.cache
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/ConsoleApp2/ConsoleApp2/obj/Debug/net8.0/ref/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfoInputs.cache
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfo.cs
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.csproj.CoreCompileInputs.cache
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/refint/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.exe
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.deps.json
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.runtimeconfig.json
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.genruntimeconfig.cache
+C:/Users/bogda/Desktop/Study/Лабораторные/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ref/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.exe
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.deps.json
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.runtimeconfig.json
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfoInputs.cache
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfo.cs
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.csproj.CoreCompileInputs.cache
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/refint/ConsoleApp2.dll
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.pdb
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.genruntimeconfig.cache
+C:/Users/bogda/Desktop/Study/Лабораторные по ЧМ и АиСД/АиСД/Project_Algos/ConsoleApp2/obj/Debug/net8.0/ref/ConsoleApp2.dll
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.deps.json
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.runtimeconfig.json
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.dll
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/bin/Debug/net8.0/ConsoleApp2.pdb
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfoInputs.cache
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.AssemblyInfo.cs
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.csproj.CoreCompileInputs.cache
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.sourcelink.json
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.dll
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/refint/ConsoleApp2.dll
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.pdb
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ConsoleApp2.genruntimeconfig.cache
+/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/Debug/net8.0/ref/ConsoleApp2.dll
