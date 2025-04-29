@@ -30,10 +30,6 @@ public class Node<KeyType, ValueType> : KeyValueItem<KeyType, ValueType>
     {
         this._next = null!;
     }
-    public Node() : base()
-    {
-        this._next = null!;
-    }
     public Node<KeyType, ValueType> Next // Свойство
     {
         get { return this._next; }

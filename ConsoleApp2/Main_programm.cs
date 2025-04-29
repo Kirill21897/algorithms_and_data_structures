@@ -130,6 +130,19 @@ class Program
 
                 case 3:
                     Console.WriteLine("\n-----Списки-----");
+                    var list = new LinkedList<int, string>();
+                    list.AddToStart(1, "One");
+                    list.AddToEnd(2, "Two");
+                    list.AddToEnd(3, "Three");
+                    Console.WriteLine(list); 
+
+                    list.RemoveFirst();
+                    Console.WriteLine(list); 
+
+                    var doublyList = new DoublyLinkedList<int, string>();
+                    doublyList.AddToStart(1, "One");
+                    doublyList.AddToEnd(2, "Two");
+                    Console.WriteLine(doublyList); 
                     flag = false;
                     break;
 
