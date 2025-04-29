@@ -1,43 +1,43 @@
-public class Item<K, T>
+public class KeyValueItem<KeyType, ValueType>
 {
-    protected K key; // Ключ
-    protected T value; // Значение
-    public T Value // Свойство
+    protected KeyType _key; // Ключ
+    protected ValueType _value; // Значение
+    public ValueType Value // Свойство
     {
-        get { return this.value; }
-        set { this.value = value; }
+        get { return this._value; }
+        set { this._value = value; }
     }
-    public K Key // Свойство
+    public KeyType Key // Свойство
     {
-        get { return this.key; }
-        set { this.key = value; }
+        get { return this._key; }
+        set { this._key = value; }
     }
     public override string ToString()
     {
         return string.Format("(key={0}, Value={1})", Key, Value);
     }
     // Конструкторы
-    public Item() { this.key = default(K); this.value = default(T); }
-    public Item(K key, T value) { this.key = key; this.value = value; }
+    public KeyValueItem() { this._key = default(KeyType)!; this._value = default(ValueType)!; }
+    public KeyValueItem(KeyType key, ValueType value) { this._key = key; this._value = value; }
 }
 
-public class SingleNode<K, T> : Item<K, T>
+public class Node<KeyType, ValueType> : KeyValueItem<KeyType, ValueType>
 {
-    private SingleNode<K, T> next; // Ссылка на следующий узел
+    private Node<KeyType, ValueType> _next; // Ссылка на следующий узел
 
     // Конструкторы узла
-    public SingleNode(K key, T value) : base(key, value)
+    public Node(KeyType key, ValueType value) : base(key, value)
     {
-        this.next = null;
+        this._next = null!;
     }
-    public SingleNode() : base()
+    public Node() : base()
     {
-        this.next = null;
+        this._next = null!;
     }
-    public SingleNode<K, T> Next // Свойство
+    public Node<KeyType, ValueType> Next // Свойство
     {
-        get { return this.next; }
-        set { this.next = value; }
+        get { return this._next; }
+        set { this._next = value; }
     }
 
     public override string ToString()
@@ -46,198 +46,199 @@ public class SingleNode<K, T> : Item<K, T>
     }
 }
 
-public class SingleLinkedList<K, T> where K : IComparable where T : IComparable
+public class LinkedList<KeyType, ValueType> where KeyType : IComparable where ValueType : IComparable
 {
-    private SingleNode<K, T> first = null;   // Ссылка на начальный узел
-    private int pos = 0;
-    public SingleNode<K, T> First { get { return first; } } // Свойство
-    public SingleLinkedList() { first = null; pos = 0; }
-    public int Count { get { return pos; } } // Свойство
+    private Node<KeyType, ValueType> _head = null!;   // Ссылка на начальный узел
+    private int _count = 0;
+    public Node<KeyType, ValueType> Head { get { return _head; } } // Свойство
+    public LinkedList() { _head = null!; _count = 0; }
+    public int Count { get { return _count; } } // Свойство
 
     // Добавить в начало
-    public int AddBegin(K key, T value)
+    public int AddToStart(KeyType key, ValueType value)
     {
-        SingleNode<K, T> s = new SingleNode<K, T>(key, value);
-        s.Next = first; first = s;
-        return this.pos++;
+        Node<KeyType, ValueType> newNode = new Node<KeyType, ValueType>(key, value);
+        newNode.Next = _head; _head = newNode;
+        return this._count++;
     }
 
     // Добавить в конец
-    public int AddEnd(K key, T value)
+    public int AddToEnd(KeyType key, ValueType value)
     {
-        SingleNode<K, T> s = new SingleNode<K, T>(key, value);
+        Node<KeyType, ValueType> newNode = new Node<KeyType, ValueType>(key, value);
         // Если список пустой    
-        if (this.first == null) { this.first = s; return this.pos++; }
+        if (this._head == null) { this._head = newNode; return this._count++; }
         // Поиск последнего узла
-        SingleNode<K, T> e = this.first;
-        while (e.Next != null)
+        Node<KeyType, ValueType> current = this._head;
+        while (current.Next != null)
         {
-            e = e.Next;
+            current = current.Next;
         }
         // Добавление в конец
-        e.Next = s;
-        return this.pos++;
+        current.Next = newNode;
+        return this._count++;
     }
 
     // Очистка списка
     public void Clear()
     {
-        this.first = null;
-        this.pos = 0;
+        this._head = null!;
+        this._count = 0;
     }
 
     // Проверка на значение
-    public bool ContainsValue(T value)
+    public bool Contains(ValueType value)
     {
-        if (this.first != null)
+        if (this._head != null)
         {
-            SingleNode<K, T> e = this.first;
+            Node<KeyType, ValueType> current = this._head;
             do
             {
-                if (e.Value.CompareTo(value) == 0)
+                if (current.Value.CompareTo(value) == 0)
                 {
                     return true;
                 }
-                e = e.Next;
-            } while (e != null);
+                current = current.Next;
+            } while (current != null);
         }
         return false;
     }
 
-    public SingleNode<K, T> getAt(int index)
+    public Node<KeyType, ValueType> GetAt(int index)
     {
         if (index < 0 || index >= this.Count)
         {
-            return null;
+            return null!;
         }
-        SingleNode<K, T> e = null;
+        Node<KeyType, ValueType> current = null!;
         int counter = 0;
-        if (this.first != null)
+        if (this._head != null)
         {
-            e = this.first;
+            current = this._head;
             while (counter != index)
             {
-                e = e.Next;
+                current = current.Next;
                 counter++;
             }
         }
 
-        return e;
+        return current;
     }
 
-    public void InsertAfter(int index, SingleNode<K, T> item)
+    public void InsertAfter(int index, Node<KeyType, ValueType> newNode)
     {
-        SingleNode<K, T> e = getAt(index);
-        if (e != null)
+        Node<KeyType, ValueType> current = GetAt(index);
+        if (current != null)
         {
-            item.Next = e.Next;
-            e.Next = item;
-            this.pos++;
+            newNode.Next = current.Next;
+            current.Next = newNode;
+            this._count++;
         }
     }
 
-    public void InsertBefore(int index, SingleNode<K, T> item)
+    public void InsertBefore(int index, Node<KeyType, ValueType> newNode)
     {
         if (index < 1) return;
-        SingleNode<K, T> e = getAt(index - 1);
-        if (e != null)
+                Node<KeyType, ValueType> current = GetAt(index - 1);
+        if (current != null)
         {
-            item.Next = e.Next;
-            e.Next = item;
-            this.pos++;
+            newNode.Next = current.Next;
+            current.Next = newNode;
+            this._count++;
         }
     }
 
     public override string ToString()
     {
-        string res = "";
+        string result = "";
         for (int i = 0; i < this.Count; i++)
         {
-            res += this.getAt(i).ToString() + " ";
+            result += this.GetAt(i).ToString() + " ";
         }
 
-        return res;
+        return result;
     }
 
-    public void DeleteLast()
+    public void RemoveLast()
     {
-        if (this.first != null)
+        if (this._head != null)
         {
             if (this.Count == 1)
             {
-                this.first = null;
+                this._head = null!;
             }
             else
             {
-                SingleNode<K, T> last = this.getAt(this.Count - 2);
-                last.Next = null;
+                Node<KeyType, ValueType> secondLast = this.GetAt(this.Count - 2);
+                secondLast.Next = null!;
             }
-            this.pos--;
+            this._count--;
         }
     }
 
-    public SingleNode<K, T> GetLast()
+    public Node<KeyType, ValueType> GetLast()
     {
-        if (this.first != null)
+        if (this._head != null)
         {
-            return getAt(this.Count - 1);
+            return GetAt(this.Count - 1);
         }
 
-        return null;
+        return null!;
     }
 
-    public SingleNode<K, T> GetFirst()
+    public Node<KeyType, ValueType> GetFirst()
     {
-        return this.first;
+        return this._head;
     }
 
-    public void DeleteFirst()
+    public void RemoveFirst()
     {
-        if (this.first != null)
+        if (this._head != null)
         {
-            this.first = this.first.Next;
-            this.pos--;
+            this._head = this._head.Next;
+            this._count--;
         }
     }
 
-    public void DeleteByKey(SingleNode<K, T> item)
+    public void RemoveByKey(Node<KeyType, ValueType> node)
     {
-        if (this.first != null)
+        if (this._head != null)
         {
-            if (this.first.Key.CompareTo(item.Key) == 0)
+            if (this._head.Key.CompareTo(node.Key) == 0)
             {
-                this.DeleteFirst();
+                this.RemoveFirst();
                 return;
             }
 
-            SingleNode<K, T> e = this.first;
-            while (e.Next != null)
+            Node<KeyType, ValueType> current = this._head;
+            while (current.Next != null)
             {
-                if (e.Next.Key.CompareTo(item.Key) == 0)
+                if (current.Next.Key.CompareTo(node.Key) == 0)
                 {
-                    e.Next = e.Next.Next;
-                    pos--;
+                    current.Next = current.Next.Next;
+                    _count--;
                     return;
                 }
-                e = e.Next;
+                current = current.Next;
             }
         }
     }
 
-    public void DeleteAt(int index)
+    public void RemoveAt(int index)
     {
         if (index == 0)
         {
-            this.DeleteFirst();
+            this.RemoveFirst();
         }
         else
         {
-            SingleNode<K, T> e = getAt(index - 1);
-            if (e != null && e.Next != null)
+            Node<KeyType, ValueType> current = GetAt(index - 1);
+            if (current != null && current.Next != null)
             {
-                e.Next = e.Next.Next;
-                this.pos--;
+                current.Next = current.Next.Next;
+                this._count--;
             }
         }
     }
 }
+

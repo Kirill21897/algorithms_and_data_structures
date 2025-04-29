@@ -7,7 +7,7 @@ class Program
     {
         bool flag = true;
         while(flag){
-            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Выход");
+            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Выход");
             string ex = Console.ReadLine()!;
             int ex_number = int.Parse(ex);
             switch(ex_number)
@@ -70,7 +70,7 @@ class Program
                     break;
 
                 case 2:
-                    Console.WriteLine("\n-----Сортировки (в разработке)-----");
+                    Console.WriteLine("\n-----Сортировки-----");
                     //Создание массива данных
                     int[] array = { 64, 34, 25, 12, 22, 11, 90 };
 
@@ -129,6 +129,11 @@ class Program
                     break;
 
                 case 3:
+                    Console.WriteLine("\n-----Списки-----");
+                    flag = false;
+                    break;
+
+                case 4:
                     flag = false;
                     break;
 
