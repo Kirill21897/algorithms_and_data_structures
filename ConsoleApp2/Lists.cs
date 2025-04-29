@@ -242,3 +242,213 @@ public class LinkedList<KeyType, ValueType> where KeyType : IComparable where Va
     }
 }
 
+// --- Длбавление классов и методов для работы с двусвязными списками ---
+
+public class DoublyNode<KeyType, ValueType> : KeyValueItem<KeyType, ValueType>
+{
+    private DoublyNode<KeyType, ValueType> _next; // Ссылка на следующий узел
+    private DoublyNode<KeyType, ValueType> _prev; // Ссылка на предыдущий узел
+
+    // Конструкторы узла
+    public DoublyNode(KeyType key, ValueType value) : base(key, value)
+    {
+        this._next = null!;
+        this._prev = null!;
+    }
+    public DoublyNode() : base()
+    {
+        this._next = null!;
+        this._prev = null!;
+    }
+    
+    public DoublyNode<KeyType, ValueType> Next // Свойство
+    {
+        get { return this._next; }
+        set { this._next = value; }
+    }
+
+    public DoublyNode<KeyType, ValueType> Prev // Свойство
+    {
+        get { return this._prev; }
+        set { this._prev = value; }
+    }
+
+    public override string ToString()
+    {
+        return base.ToString();
+    }
+}
+
+
+public class DoublyLinkedList<KeyType, ValueType> where KeyType : IComparable where ValueType : IComparable
+{
+    private DoublyNode<KeyType, ValueType> _head = null!;   // Ссылка на начальный узел
+    private DoublyNode<KeyType, ValueType> _tail = null!;   // Ссылка на конечный узел
+    private int _count = 0;
+
+    public DoublyNode<KeyType, ValueType> Head { get { return _head; } } // Свойство
+    public DoublyNode<KeyType, ValueType> Tail { get { return _tail; } } // Свойство
+    public int Count { get { return _count; } } // Свойство
+
+    public DoublyLinkedList() 
+    {
+        _head = null!;
+        _tail = null!;
+        _count = 0;
+    }
+
+    // Добавить в начало
+    public void AddToStart(KeyType key, ValueType value)
+    {
+        DoublyNode<KeyType, ValueType> newNode = new DoublyNode<KeyType, ValueType>(key, value);
+        if (_head == null)
+        {
+            _head = newNode;
+            _tail = newNode;
+        }
+        else
+        {
+            newNode.Next = _head;
+            _head.Prev = newNode;
+            _head = newNode;
+        }
+        _count++;
+    }
+
+    // Добавить в конец
+    public void AddToEnd(KeyType key, ValueType value)
+    {
+        DoublyNode<KeyType, ValueType> newNode = new DoublyNode<KeyType, ValueType>(key, value);
+        if (_tail == null)
+        {
+            _head = newNode;
+            _tail = newNode;
+        }
+        else
+        {
+            newNode.Prev = _tail;
+            _tail.Next = newNode;
+            _tail = newNode;
+        }
+        _count++;
+    }
+
+    // Очистка списка
+    public void Clear()
+    {
+        _head = null!;
+        _tail = null!;
+        _count = 0;
+    }
+
+    // Удалить первый элемент
+    public void RemoveFirst()
+    {
+        if (_head != null)
+        {
+            if (_head == _tail) // Если один элемент
+            {
+                _head = null!;
+                _tail = null!;
+            }
+            else
+            {
+                _head = _head.Next;
+                _head.Prev = null!;
+            }
+            _count--;
+        }
+    }
+
+    // Удалить последний элемент
+    public void RemoveLast()
+    {
+        if (_tail != null)
+        {
+            if (_head == _tail) // Если один элемент
+            {
+                _head = null!;
+                _tail = null!;
+            }
+            else
+            {
+                _tail = _tail.Prev;
+                _tail.Next = null!;
+            }
+            _count--;
+        }
+    }
+
+    // Получить узел по индексу
+    public DoublyNode<KeyType, ValueType> GetAt(int index)
+    {
+        if (index < 0 || index >= _count)
+        {
+            return null!;
+        }
+
+        DoublyNode<KeyType, ValueType> current = _head;
+        for (int i = 0; i < index; i++)
+        {
+            current = current.Next;
+        }
+
+        return current;
+    }
+
+    // Удалить узел по индексу
+    public void RemoveAt(int index)
+    {
+        if (index < 0 || index >= _count)
+        {
+            return;
+        }
+
+        if (index == 0)
+        {
+            RemoveFirst();
+        }
+        else if (index == _count - 1)
+        {
+            RemoveLast();
+        }
+        else
+        {
+            DoublyNode<KeyType, ValueType> current = GetAt(index);
+            if (current != null)
+            {
+                current.Prev.Next = current.Next;
+                current.Next.Prev = current.Prev;
+                _count--;
+            }
+        }
+    }
+
+    // Проверка на наличие значения
+    public bool Contains(ValueType value)
+    {
+        DoublyNode<KeyType, ValueType> current = _head;
+        while (current != null)
+        {
+            if (current.Value.CompareTo(value) == 0)
+            {
+                return true;
+            }
+            current = current.Next;
+        }
+        return false;
+    }
+
+    // Печать списка
+    public override string ToString()
+    {
+        string result = "";
+        DoublyNode<KeyType, ValueType> current = _head;
+        while (current != null)
+        {
+            result += current.ToString() + " ";
+            current = current.Next;
+        }
+        return result;
+    }
+}
