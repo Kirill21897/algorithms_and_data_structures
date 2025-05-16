@@ -7,7 +7,7 @@ class Program
     {
         bool flag = true;
         while(flag){
-            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Выход");
+            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Hash - таблицы\n5) Выход");
             string ex = Console.ReadLine()!;
             int ex_number = int.Parse(ex);
             switch(ex_number)
@@ -147,6 +147,49 @@ class Program
                     break;
 
                 case 4:
+                    Console.WriteLine("\n-----Hash - таблицы-----");
+                    // === Демонстрация работы HashTableList ===
+                    Console.WriteLine("Тестирование HashTableList (цепочки)");
+                    var hashTableList = new HashTableList<string, int>(3);
+
+                    hashTableList.Add("a", 10);
+                    hashTableList.Add("b", 20);
+                    hashTableList.Add("c", 30);
+
+                    Console.WriteLine("Поиск 'a': " + hashTableList.Get("a")?.Value);
+                    Console.WriteLine("Поиск 'b': " + hashTableList.Get("b")?.Value);
+                    Console.WriteLine("Поиск 'd': " + (hashTableList.Get("d") == null ? "не найдено" : ""));
+
+                    hashTableList.Remove("b");
+                    Console.WriteLine("После удаления 'b', поиск 'b': " + (hashTableList.Get("b") == null ? "не найдено" : "ошибка"));
+
+                    Console.WriteLine("\nСодержимое HashTableList:");
+                    Console.WriteLine(hashTableList);
+
+                    // === Демонстрация работы HashTableArray ===
+
+                    Console.WriteLine("\n\nТестирование HashTableArray (пробирование)");
+                    var hashTableArray = new HashTableArray<string, int>(5);
+
+                    hashTableArray.Add("x", 100);
+                    hashTableArray.Add("y", 200);
+                    hashTableArray.Add("z", 300);
+
+                    Console.WriteLine("Поиск 'x': " + hashTableArray.Get("x")?.Value);
+                    Console.WriteLine("Поиск 'y': " + hashTableArray.Get("y")?.Value);
+                    Console.WriteLine("Поиск 'w': " + (hashTableArray.Get("w") == null ? "не найдено" : ""));
+
+                    hashTableArray.Remove("y");
+                    Console.WriteLine("После удаления 'y', поиск 'y': " + (hashTableArray.Get("y") == null ? "не найдено" : "ошибка"));
+
+
+                    Console.WriteLine("\nСодержимое HashTableArray:");
+                    Console.WriteLine(hashTableArray);
+
+                    flag = false;
+                    break;
+                
+                case 5:
                     flag = false;
                     break;
 
