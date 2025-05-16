@@ -7,7 +7,7 @@ class Program
     {
         bool flag = true;
         while(flag){
-            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Hash - таблицы\n5) Выход");
+            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Hash - таблицы\n5) Бинарное дерево \n6) Выход");
             string ex = Console.ReadLine()!;
             int ex_number = int.Parse(ex);
             switch(ex_number)
@@ -190,8 +190,59 @@ class Program
                     break;
                 
                 case 5:
+                    // Создаем дерево
+                    var tree = new BinarySearchTree<string>();
+
+                    // Добавляем элементы
+                    tree.Add("Пять", 5);
+                    tree.Add("Три", 3);
+                    tree.Add("Семь", 7);
+                    tree.Add("Один", 1);
+                    tree.Add("Девять", 9);
+                    tree.Add("Шесть", 6);
+
+                    Console.WriteLine("=== Обход дерева до балансировки ===");
+                    tree.DisplayTree(); // Выводим несбалансированное дерево
+
+                    Console.WriteLine("=== Балансировка дерева ===");
+                    tree.Rebalance();
+
+                    Console.WriteLine("=== Обход дерева после балансировки ===");
+                    tree.DisplayTree();
+
+                    Console.WriteLine("=== Поиск элемента с ключом 6 ===");
+                    var found = tree.Search(6);
+                    if (found != null)
+                        Console.WriteLine($"Найдено: {found.Value} (ключ: {found.Key})");
+                    else
+                        Console.WriteLine("Не найдено");
+
+                    Console.WriteLine("=== Удаление элемента с ключом 7 ===");
+                    tree.Remove(7);
+
+                    Console.WriteLine("=== Обход дерева после удаления ===");
+                    tree.DisplayTree();
+
+                    Console.WriteLine("=== Минимальный элемент ===");
+                    var minNode = tree.FindMinimum(tree.Search(5));
+                    Console.WriteLine(minNode?.Value);
+
+                    Console.WriteLine("=== Следующий элемент после ключа 5 ===");
+                    var next = tree.GetNext(tree.Search(5));
+                    Console.WriteLine(next?.Value ?? "Нет следующего");
+
+                    Console.WriteLine("=== Обход по возрастанию через InOrderWalk ===");
+                    tree.InOrderWalk();
+
+                    Console.WriteLine("=== Обход по убыванию через BackwardWalk ===");
+                    tree.BackwardWalk();
                     flag = false;
                     break;
+
+                case 6:
+                    flag = false;
+                    break;
+
 
                 default:
                     Console.WriteLine("Неправильоное значение! Введите верный номер");
