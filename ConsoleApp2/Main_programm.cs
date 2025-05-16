@@ -7,7 +7,7 @@ class Program
     {
         bool flag = true;
         while(flag){
-            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Hash - таблицы\n5) Бинарное дерево \n6) Выход");
+            Console.WriteLine("Выберете тест:\n1) Множества\n2) Сортировки\n3) Списки\n4) Hash - таблицы\n5) Бинарное дерево \n6) Графы \n7) Выход");
             string ex = Console.ReadLine()!;
             int ex_number = int.Parse(ex);
             switch(ex_number)
@@ -66,7 +66,7 @@ class Program
                     {
                         Console.WriteLine(subset);
                     }         
-                    flag = false;
+                    //flag = false;
                     break;
 
                 case 2:
@@ -143,7 +143,7 @@ class Program
                     doublyList.AddToStart(1, "One");
                     doublyList.AddToEnd(2, "Two");
                     Console.WriteLine(doublyList); 
-                    flag = false;
+                    //flag = false;
                     break;
 
                 case 4:
@@ -186,10 +186,11 @@ class Program
                     Console.WriteLine("\nСодержимое HashTableArray:");
                     Console.WriteLine(hashTableArray);
 
-                    flag = false;
+                    //flag = false;
                     break;
                 
                 case 5:
+                    Console.WriteLine("\n-----Бинарное дерево-----");
                     // Создаем дерево
                     var tree = new BinarySearchTree<string>();
 
@@ -236,10 +237,43 @@ class Program
 
                     Console.WriteLine("=== Обход по убыванию через BackwardWalk ===");
                     tree.BackwardWalk();
-                    flag = false;
+                    //flag = false;
                     break;
 
                 case 6:
+                    Console.WriteLine("\n-----Графы-----");
+                    var network = new Network();
+
+                    var a = new Point("A");
+                    var b = new Point("B");
+                    var c = new Point("C");
+                    var d = new Point("D");
+
+                    network.AllPoints.Add(a);
+                    network.AllPoints.Add(b);
+                    network.AllPoints.Add(c);
+                    network.AllPoints.Add(d);
+
+                    network.AddBidirectionalConnection(a, b, 1);
+                    network.AddBidirectionalConnection(a, c, 2);
+                    network.AddBidirectionalConnection(b, d, 3);
+                    network.AddBidirectionalConnection(c, d, 4);
+
+                    network.PrintAdjacencyList();
+
+                    network.BFS(a);
+                    network.DFS(a);
+
+                    var centers = network.FindCenters();
+                    Console.WriteLine("\nЦентры графа:");
+                    foreach (var center in centers)
+                    {
+                        Console.WriteLine(center);
+                    }
+                    //flag = false;
+                    break;
+
+                case 7:
                     flag = false;
                     break;
 
