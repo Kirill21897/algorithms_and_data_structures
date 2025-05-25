@@ -128,15 +128,19 @@ class Set<T> where T : IComparable
         for (int i = 0; i < totalSubsets; i++)
         {
             Set<T> subset = new Set<T>(size);
-            for (int j = 0; j < size; j++)
+            int mask = 1; // Начинаем с 2^0
+            foreach (T item in data)
             {
-                if ((i & (1 << j)) != 0) 
+                if ((i & mask) != 0)
                 {
-                    subset.Add(data[j]);
+                    subset.Add(item);
                 }
+                mask <<= 1; // Увеличиваем маску (эквивалент mask *= 2)
             }
+
             subsets.Add(subset);
         }
+
         return subsets;
     }
 
