@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/kirill050905/.nuget/packages/": {}
+    "/home/kirill/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/ConsoleApp2.csproj",
+      "projectUniqueName": "/home/kirill/projects/my_project/university/algorithms_and_data_structures/ConsoleApp2/ConsoleApp2.csproj",
       "projectName": "ConsoleApp2",
-      "projectPath": "/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/ConsoleApp2.csproj",
-      "packagesPath": "/home/kirill050905/.nuget/packages/",
-      "outputPath": "/home/kirill050905/projects/Uiniversity/algorithms_and_data_structures/ConsoleApp2/obj/",
+      "projectPath": "/home/kirill/projects/my_project/university/algorithms_and_data_structures/ConsoleApp2/ConsoleApp2.csproj",
+      "packagesPath": "/home/kirill/.nuget/packages/",
+      "outputPath": "/home/kirill/projects/my_project/university/algorithms_and_data_structures/ConsoleApp2/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kirill050905/.nuget/NuGet/NuGet.Config"
+        "/home/kirill/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.116/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

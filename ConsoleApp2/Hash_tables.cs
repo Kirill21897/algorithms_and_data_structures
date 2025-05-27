@@ -15,6 +15,23 @@ class Item<K, T>
     }
 }
 
+public class KeyValueItemHash<K, T>
+{
+    public K Key { get; }
+    public T Value { get; }
+
+    public KeyValueItemHash(K key, T value)
+    {
+        Key = key;
+        Value = value;
+    }
+
+    public override string ToString()
+    {
+        return $"[{Key} → {Value}]";
+    }
+}
+
 class HashTableList<K, T> where K : IComparable
 {
     private List<Item<K, T>>[] table;
@@ -75,6 +92,43 @@ class HashTableList<K, T> where K : IComparable
             result += "\n";
         }
         return result;
+    }
+
+    public bool Contains(K key)
+    {
+        int index = Hash(key);
+        foreach (var item in table[index])
+        {
+            if (item.Key.CompareTo(key) == 0)
+                return true;
+        }
+        return false;
+    }
+
+    public KeyValueItemHash<K, T> GetToItem(K key)
+    {
+        int index = Hash(key);
+        foreach (var item in table[index])
+        {
+            if (item.Key.CompareTo(key) == 0)
+            {
+                return new KeyValueItemHash<K, T>(item.Key, item.Value);
+            }
+        }
+        return null!;
+    }
+
+    public Item<K, T>[] ToArray()
+    {
+        List<Item<K, T>> result = new List<Item<K, T>>();
+        foreach (var bucket in table)
+        {
+            foreach (var item in bucket)
+            {
+                result.Add(item);
+            }
+        }
+        return result.ToArray();
     }
 }
 
@@ -163,4 +217,51 @@ class HashTableArray<K, T> where K : IComparable
             res += $"{i}: {(table[i] == null ? "empty" : table[i])}\n";
         return res;
     }
+
+    public bool Contains(K key)
+    {
+        int index = Hash(key);
+        for (int i = 0; i < size; i++)
+        {
+            int pos = (index + i) % size;
+            if (table[pos] == null)
+                break;
+
+            if (table[pos].Key.CompareTo(key) == 0)
+                return true;
+        }
+        return false;
+    }
+
+    public KeyValueItemHash<K, T> GetToItem(K key)
+    {
+        int index = Hash(key);
+        for (int i = 0; i < size; i++)
+        {
+            int pos = (index + i) % size;
+
+            if (table[pos] == null)
+                break;
+
+            if (table[pos].Key.CompareTo(key) == 0)
+            {
+                return new KeyValueItemHash<K, T>(table[pos].Key, table[pos].Value);
+            }
+        }
+        return null!;
+    }
+
+    public Item<K, T>[] ToArray()
+    {
+        List<Item<K, T>> result = new List<Item<K, T>>();
+        foreach (var item in table)
+        {
+            if (item != null)
+            {
+                result.Add(item);
+            }
+        }
+        return result.ToArray();
+    }
+
 }

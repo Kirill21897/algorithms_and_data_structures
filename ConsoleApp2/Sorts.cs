@@ -57,47 +57,52 @@ class SortAlgorithms
 
     public static void MergeSort<T>(T[] array) where T : IComparable
     {
-        if (array.Length <= 1)
+        if (array == null || array.Length <= 1)
             return;
 
-        int mid = array.Length / 2;
-        T[] left = new T[mid];
-        T[] right = new T[array.Length - mid];
-
-        Array.Copy(array, 0, left, 0, mid);
-        Array.Copy(array, mid, right, 0, array.Length - mid);
-
-        MergeSort(left);
-        MergeSort(right);
-        
-        Merge(array, left, right);
+        MergeSort(array, 0, array.Length - 1);
     }
 
-    private static void Merge<T>(T[] array, T[] left, T[] right) where T : IComparable
+    private static void MergeSort<T>(T[] array, int low, int high) where T : IComparable
     {
-        int i = 0, j = 0, k = 0;
+        if (low >= high)
+            return;
 
-        while (i < left.Length && j < right.Length)
+        int mid = (low + high) / 2;
+        MergeSort(array, low, mid);     // Левая половина
+        MergeSort(array, mid + 1, high); // Правая половина
+
+        Merge(array, low, mid, high);
+    }
+
+    private static void Merge<T>(T[] array, int low, int mid, int high) where T : IComparable
+    {
+        // Создаем временный массив для хранения слитых данных
+        T[] temp = new T[high - low + 1];
+        int i = low;      // Указатель на левую половину
+        int j = mid + 1;  // Указатель на правую половину
+        int k = 0;        // Указатель на временный массив
+
+        // Слияние двух частей
+        while (i <= mid && j <= high)
         {
-            if (left[i].CompareTo(right[j]) <= 0)
-            {
-                array[k++] = left[i++];
-            }
+            if (array[i].CompareTo(array[j]) <= 0)
+                temp[k++] = array[i++];
             else
-            {
-                array[k++] = right[j++];
-            }
+                temp[k++] = array[j++];
         }
 
-        while (i < left.Length)
-        {
-            array[k++] = left[i++];
-        }
+        // Копируем оставшиеся элементы из левой части
+        while (i <= mid)
+            temp[k++] = array[i++];
 
-        while (j < right.Length)
-        {
-            array[k++] = right[j++];
-        }
+        // Копируем оставшиеся элементы из правой части
+        while (j <= high)
+            temp[k++] = array[j++];
+
+        // Копируем отсортированные элементы обратно в исходный массив
+        for (k = 0; k < temp.Length; k++)
+            array[low + k] = temp[k];
     }
 
     public static void QuickSort<T> (T[] array, int low, int high) where T : IComparable
